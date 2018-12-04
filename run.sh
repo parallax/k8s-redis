@@ -3,7 +3,7 @@ mkdir -p /efs/redis
 /usr/bin/redis-server \
     --protected-mode no \
     --maxmemory-policy allkeys-lru \
-    --maxmemory ${REDIS_MEMORY:-64M} \
+    --maxmemory ${REDIS_MEMORY:-64}M \
     --appendonly yes \
     --dir /efs/redis \
     --appendfsync everysec
