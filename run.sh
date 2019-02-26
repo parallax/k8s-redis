@@ -6,4 +6,5 @@ mkdir -p /efs/redis
     --maxmemory ${REDIS_MEMORY:-64}M \
     --appendonly yes \
     --dir /efs/redis \
-    --appendfsync everysec
+    --appendfsync everysec \
+    --no-appendfsync-on-rewrite yes
